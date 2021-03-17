@@ -2,7 +2,9 @@ package io.th0rgal.oraxen.compatibilities;
 
 import io.th0rgal.oraxen.compatibilities.provided.bossshoppro.BossShopProCompatibility;
 import io.th0rgal.oraxen.compatibilities.provided.cratereloaded.CrateReloadedCompatibility;
+import io.th0rgal.oraxen.compatibilities.provided.itembridge.ItemBridgeCompatibility;
 import io.th0rgal.oraxen.compatibilities.provided.mythicmobs.MythicMobsCompatibility;
+import io.th0rgal.oraxen.compatibilities.provided.worldguard.WorldGuardCompatibility;
 import io.th0rgal.oraxen.settings.MessageOld;
 import org.bukkit.Bukkit;
 
@@ -16,9 +18,11 @@ public class CompatibilitiesManager {
 
     public static void enableNativeCompatibilities() {
         new CompatibilityListener();
-        addCompatibility("MythicMobs", MythicMobsCompatibility.class, true);
-        addCompatibility("CrateReloaded", CrateReloadedCompatibility.class, true);
         addCompatibility("BossShopPro", BossShopProCompatibility.class, true);
+        addCompatibility("CrateReloaded", CrateReloadedCompatibility.class, true);
+        addCompatibility("ItemBridge", ItemBridgeCompatibility.class, true);
+        addCompatibility("MythicMobs", MythicMobsCompatibility.class, true);
+        addCompatibility("WorldGuard", WorldGuardCompatibility.class, true);
     }
 
     public static void disableCompatibilities() {

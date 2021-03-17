@@ -11,7 +11,7 @@ plugins {
 apply plugin: 'maven'
 
 group "io.th0rgal"
-def pluginVersion = "1.71.1"
+def pluginVersion = "1.72.2"
 version = pluginVersion
 
 repositories {
@@ -60,10 +60,11 @@ dependencies {
     compileOnly group: "io.lumine.xikage", name: "MythicMobs", version: "4.10.0"
     compileOnly group: "com.github.Hazebyte", name: "CrateReloadedAPI", version: "5318abfccc"
     compileOnly group: "com.sk89q.worldguard", name: "worldguard-bukkit", version: "7.0.4"
+    compileOnly group: "com.github.jojodmo", name: "ItemBridge", version: "-SNAPSHOT"
     compileOnly fileTree(dir: "libs/compile", include: ["*.jar"])
     implementation fileTree(dir: "libs/implement", include: ["*.jar"])
     implementation group: 'com.github.rockswang', name: 'java-curl', version: '1.2.2.2'
-    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.27'
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.28'
     implementation group: 'com.syntaxphoenix.syntaxapi', name: 'reflection', version: '2.0.3'
     implementation group: 'com.syntaxphoenix.syntaxapi', name: 'version', version: '2.0.4'
     implementation group: 'com.syntaxphoenix.syntaxapi', name: 'nbt', version: '2.0.4'
